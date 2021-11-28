@@ -1,9 +1,6 @@
 <ul class="list-group mt-4 mb-4">
     <app-post-item
       *ngFor="let post of posts"
-      [id]="post.id"
-      [userId]="post.userId"
-      [title]="post.title"
-      [body]="post.body"
+      [post]="post"
     ></app-post-item>
 </ul>
