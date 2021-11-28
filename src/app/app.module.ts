@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { PostsComponent } from './posts/posts.component';
 import {HttpClientModule} from '@angular/common/http';
+import { PostItemComponent } from './posts/post-item/post-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PostsComponent
+    PostsComponent,
+    PostItemComponent
   ],
   imports: [
     BrowserModule,
