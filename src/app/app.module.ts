@@ -7,13 +7,17 @@ import { HeaderComponent } from './header/header.component';
 import { PostsComponent } from './posts/posts.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PostItemComponent } from './posts/post-item/post-item.component';
+import { PhotosComponent } from './photos/photos.component';
+import { PhotoItemComponent } from './photos/photo-item/photo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PostsComponent,
-    PostItemComponent
+    PostItemComponent,
+    PhotosComponent,
+    PhotoItemComponent
   ],
   imports: [
     BrowserModule,

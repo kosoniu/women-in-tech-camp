@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Posts</a>
-      <a class="nav-item nav-link" href="#">Photos</a>
+      <a class="nav-item nav-link" [routerLinkActive]="['active']" routerLink="/posts">Posts</a>
+      <a class="nav-item nav-link" [routerLinkActive]="['active']" routerLink="/photos">Photos</a>
     </div>
   </div>
 </nav>
