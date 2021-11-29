@@ -1,1 +1,6 @@
-<p>photos works!</p>
+<ul class="list-group mt-4 mb-4">
+  <app-photo-item
+    *ngFor="let photo of photos"
+    [photo]="photo"
+  ></app-photo-item>
+</ul>

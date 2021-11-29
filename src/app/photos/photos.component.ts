@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {Photo} from './photo.model';
 
 @Component({
   selector: 'app-photos',
@@ -13,7 +14,7 @@ export class PhotosComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    this.httpClient.get<any[]>('https://jsonplaceholder.typicode.com/photos')
+    this.httpClient.get<Photo[]>('https://jsonplaceholder.typicode.com/photos')
       .subscribe(photos => {
         this.photos = photos.slice(0, 10);
         console.log(this.photos);
